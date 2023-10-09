@@ -27,15 +27,15 @@ namespace MeetingRooms
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            switch(this.MeetingRoom1Selector.Visibility)
+            if (this.MeetingRoom1Selector.Visibility == Visibility.Collapsed)
             {
-                case Visibility.Visible:
-                    this.MeetingRoom1Selector.Visibility = Visibility.Collapsed;
-                    break;
-
-                case Visibility.Collapsed:
-                    this.MeetingRoom1Selector.Visibility = Visibility.Visible;
-                    break;
+                this.MeetingRoom1Selector.Visibility = Visibility.Visible;
+                this.Meeting_Room_1.Content = "Piilota";
+            }
+            else
+            {
+                this.MeetingRoom1Selector.Visibility = Visibility.Collapsed;
+                this.Meeting_Room_1.Content = "Meeting Room 1";
             }
         }
     }

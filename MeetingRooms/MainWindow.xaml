@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel Height="NaN" Margin="-88,80,239,10" Width="NaN" Visibility="Visible" Name="MeetingRoom1Selector">
+        <StackPanel Height="NaN" Margin="-88,80,239,10" Width="NaN" Visibility="Collapsed" Name="MeetingRoom1Selector">
             <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
