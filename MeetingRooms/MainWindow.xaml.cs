@@ -38,5 +38,25 @@ namespace MeetingRooms
                 this.Meeting_Room_1.Content = "Kokoushuone 1";
             }
         }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

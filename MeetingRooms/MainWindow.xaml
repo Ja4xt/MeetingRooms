@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MeetingRooms"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="768" Width="1280">
+    <Grid HorizontalAlignment="Center" Width="1280" Height="768" VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="78*"/>
+            <RowDefinition Height="139*"/>
+        </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="/1.jpg"/>
         </Grid.Background>
-        <StackPanel Height="NaN" Margin="-71,80,222,10" Width="NaN" Visibility="Visible" Name="MeetingRoom1Selector">
-            <Button Content="8:00 - 9:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+        <StackPanel Height="NaN" Margin="-173,276,324,-186" Width="NaN" Visibility="Visible" Name="MeetingRoom1Selector" Grid.RowSpan="2">
+            <Button Content="8:00 - 9:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -20,7 +24,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="9:00 - 10:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="9:00 - 10:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -29,7 +33,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="10:00 - 11:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="10:00 - 11:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -38,7 +42,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="11:00 - 12:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="11:00 - 12:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -47,7 +51,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="12:00 - 13:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="12:00 - 13:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,1">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -56,7 +60,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="13:00 - 14:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="13:00 - 14:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,1">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -65,7 +69,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="14:00 - 15:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="14:00 - 15:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,1,2">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -74,7 +78,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="15:00 - 16:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="15:00 - 16:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -83,7 +87,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="16:00 - 17:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="16:00 - 17:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -92,7 +96,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="17:00 - 18:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="17:00 - 18:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -102,14 +106,18 @@
                 </Button.RenderTransform>
             </Button>
         </StackPanel>
-        <Button Content="Kokoushuone 1" x:Name="Meeting_Room_1" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Background="#FFFBFBFB" BorderBrush="#FF67FF03" BorderThickness="2,2,2,2" Margin="31,208,599,92">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
+        <Button Content="Kokoushuone 1" x:Name="Meeting_Room_1" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Background="#FFFBFBFB" BorderBrush="#FF67FF03" BorderThickness="2,2,2,2" Margin="0,93,959,0" Grid.Row="1" Height="243" VerticalAlignment="Top" HorizontalAlignment="Right" Width="270"/>
+        <DockPanel LastChildFill="False" Margin="452,234,596,413" Grid.RowSpan="2">
+            <DockPanel.Background>
+                <SolidColorBrush Color="#FF757575" Opacity="0.8"/>
+            </DockPanel.Background>
+            <Button Content="Download virus!&#xD;&#xA;" DockPanel.Dock="Bottom" Height="63" Width="214" Click="Button_Click_2">
+                <Button.Background>
+                    <SolidColorBrush Color="#FF42FF00" Opacity="0.8"/>
+                </Button.Background>
+            </Button>
+            <TextBox TextWrapping="Wrap" Text="Nimi:" DockPanel.Dock="Top" Height="27" TextChanged="TextBox_TextChanged" BorderBrush="{x:Null}" Background="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" Foreground="Black"/>
+            <TextBox TextWrapping="Wrap" Text="Kommentti:" DockPanel.Dock="Top" TextChanged="TextBox_TextChanged" Height="27" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" Foreground="Black"/>
+        </DockPanel>
     </Grid>
 </Window>
