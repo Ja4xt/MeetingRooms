@@ -7,8 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel Height="NaN" Margin="-88,80,239,10" Width="NaN" Visibility="Collapsed" Name="MeetingRoom1Selector">
-            <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+        <Grid.Background>
+            <ImageBrush ImageSource="/1.jpg"/>
+        </Grid.Background>
+        <StackPanel Height="NaN" Margin="-71,80,222,10" Width="NaN" Visibility="Visible" Name="MeetingRoom1Selector">
+            <Button Content="8:00 - 9:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -17,7 +20,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="9:00 - 10:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -26,7 +29,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="10:00 - 11:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -35,7 +38,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="11:00 - 12:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -44,7 +47,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="12:00 - 13:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -53,7 +56,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="13:00 - 14:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -62,7 +65,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="14:00 - 15:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -71,7 +74,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="15:00 - 16:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -80,7 +83,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="16:00 - 17:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -89,7 +92,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Button" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
+            <Button Content="17:00 - 18:00" RenderTransformOrigin="0.5,0.5" Height="32" Width="100" Click="Button_Click">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -99,7 +102,7 @@
                 </Button.RenderTransform>
             </Button>
         </StackPanel>
-        <Button Content="Meeting Room 1" x:Name="Meeting_Room_1" HorizontalAlignment="Left" Margin="72,297,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="80" Width="99" Click="Button_Click">
+        <Button Content="Kokoushuone 1" x:Name="Meeting_Room_1" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Background="#FFFBFBFB" BorderBrush="#FF67FF03" BorderThickness="2,2,2,2" Margin="31,208,599,92">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -108,6 +111,5 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-
     </Grid>
 </Window>

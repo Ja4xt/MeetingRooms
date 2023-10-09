@@ -35,7 +35,7 @@ namespace MeetingRooms
             else
             {
                 this.MeetingRoom1Selector.Visibility = Visibility.Collapsed;
-                this.Meeting_Room_1.Content = "Meeting Room 1";
+                this.Meeting_Room_1.Content = "Kokoushuone 1";
             }
         }
     }
