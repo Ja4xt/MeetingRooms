@@ -46,7 +46,16 @@ namespace MeetingRooms
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            {
+                if (this.ReservationWindow.Visibility == Visibility.Collapsed)
+                {
+                    this.ReservationWindow.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    this.ReservationWindow.Visibility = Visibility.Collapsed;
+                }
+            }
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
