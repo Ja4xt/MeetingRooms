@@ -24,18 +24,20 @@ namespace MeetingRooms
         {
             InitializeComponent();
         }
+        private Button Nappi;
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (this.MeetingRoom1Selector.Visibility == Visibility.Collapsed)
             {
                 this.MeetingRoom1Selector.Visibility = Visibility.Visible;
-                this.Meeting_Room_1.Content = "Piilota";
+                this.Meeting_Room_1.Content = "Kokoushuone 1";
             }
             else
             {
                 this.MeetingRoom1Selector.Visibility = Visibility.Collapsed;
-                this.Meeting_Room_1.Content = "Kokoushuone 1";
+                this.Meeting_Room_1.Content = "Piilota";
             }
         }
 
@@ -48,6 +50,8 @@ namespace MeetingRooms
         {
             // Get the button that was clicked
             Button clickedButton = sender as Button;
+            Nappi = clickedButton;
+            
 
             if (clickedButton != null)
             {
@@ -65,8 +69,25 @@ namespace MeetingRooms
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            Button clickedButton = sender as Button;
 
-        }
+            if (this.ReservationDockPanel.Visibility == Visibility.Collapsed)
+            {
+                this.ReservationDockPanel.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                this.ReservationDockPanel.Visibility = Visibility.Collapsed;
+            }
+
+            if (clickedButton != null)
+            {
+                var converter = new System.Windows.Media.BrushConverter();
+                var brush = (Brush)converter.ConvertFromString("#FFFF0000");
+                Nappi.BorderBrush = brush;
+            };
+
+            }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
