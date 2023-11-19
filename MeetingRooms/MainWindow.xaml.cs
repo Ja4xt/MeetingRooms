@@ -56,7 +56,7 @@ namespace MeetingRooms
             {
                 // Calculate the position of the DockPanel relative to the button
                 GeneralTransform transform = clickedButton.TransformToAncestor(this);
-                Point position = transform.Transform(new Point(-350, -600));
+                Point position = transform.Transform(new Point(-300, -700));
 
                 // Set the DockPanel's position
                 ReservationDockPanel.Margin = new Thickness(position.X + clickedButton.ActualWidth, position.Y, 000, 000);
