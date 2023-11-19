@@ -46,7 +46,27 @@ namespace MeetingRooms
 
         }
 
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            // Get the button that was clicked
+            Button clickedButton = sender as Button;
+
+            if (clickedButton != null)
+            {
+                // Calculate the position of the DockPanel relative to the button
+                GeneralTransform transform = clickedButton.TransformToAncestor(this);
+                Point position = transform.Transform(new Point(-350, -600));
+
+                // Set the DockPanel's position
+                ReservationDockPanel.Margin = new Thickness(position.X + clickedButton.ActualWidth, position.Y, 000, 000);
+
+                // Show the DockPanel
+                ReservationDockPanel.Visibility = Visibility.Visible;
+            }
+        }
+
+        /*private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             // Get the button that was clicked
             Button clickedButton = sender as Button;
@@ -56,8 +76,8 @@ namespace MeetingRooms
             if (clickedButton != null)
             {
                 // Calculate the position of the DockPanel relative to the button
-                double left = clickedButton.TranslatePoint(new Point(-350, 0), this).X;
-                double top = clickedButton.TranslatePoint(new Point(0, -300), this).Y;
+                double left = clickedButton.TranslatePoint(new Point(-300, 0), this).X;
+                double top = clickedButton.TranslatePoint(new Point(0, -800), this).Y;
 
                 // Set the DockPanel's position
                 ReservationDockPanel.Margin = new Thickness(left, top, 0, 0);
@@ -65,7 +85,7 @@ namespace MeetingRooms
                 // Show the DockPanel
                 ReservationDockPanel.Visibility = Visibility.Visible;
             }
-        }
+        }*/
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
