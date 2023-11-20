@@ -67,31 +67,6 @@ namespace MeetingRooms
             }
         }
 
-        private void InnerButton_PMD(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            e.Handled = true;
-        }
-
-        /*private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            // Get the button that was clicked
-            Button clickedButton = sender as Button;
-            Nappi = clickedButton;
-            
-
-            if (clickedButton != null)
-            {
-                // Calculate the position of the DockPanel relative to the button
-                double left = clickedButton.TranslatePoint(new Point(-300, 0), this).X;
-                double top = clickedButton.TranslatePoint(new Point(0, -800), this).Y;
-
-                // Set the DockPanel's position
-                ReservationDockPanel.Margin = new Thickness(left, top, 0, 0);
-
-                // Show the DockPanel
-                ReservationDockPanel.Visibility = Visibility.Visible;
-            }
-        }*/
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
