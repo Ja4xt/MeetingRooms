@@ -46,7 +46,7 @@ namespace MeetingRooms
 
         }
 
-
+        // Logic for meeting room buttons
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             // Get the button that was clicked
@@ -67,7 +67,7 @@ namespace MeetingRooms
             }
         }
 
-
+        // Logic for stack panel buttons
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Button clickedButton = sender as Button;
