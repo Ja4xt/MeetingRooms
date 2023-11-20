@@ -51,6 +51,7 @@ namespace MeetingRooms
         {
             // Get the button that was clicked
             Button clickedButton = sender as Button;
+            Nappi = clickedButton;
 
             if (clickedButton != null)
             {
