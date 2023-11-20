@@ -15,6 +15,8 @@
         </Grid.Background>
         <Button Content="Kokoushuone 1" x:Name="Meeting_Room_1" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Background="#FFFBFBFB" BorderBrush="#CCCCCCCC" BorderThickness="2,2,2,2" Margin="0,370,959,0" Height="242" VerticalAlignment="Top" HorizontalAlignment="Right" Width="270"/>
         <Button Content="Kokoushuone 2" x:Name="Meeting_Room_2" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Background="#FFFBFBFB" BorderBrush="#CCCCCCCC" BorderThickness="2,2,2,2" Margin="0,370,684,0" Height="242" VerticalAlignment="Top" HorizontalAlignment="Right" Width="270"/>
+        <Button Content="Kokoushuone 3" x:Name="Meeting_Room_3" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Background="#FFFBFBFB" BorderBrush="#CCCCCCCC" BorderThickness="2,2,2,2" Margin="0,370,402,0" Height="242" VerticalAlignment="Top" HorizontalAlignment="Right" Width="277"/>
+        <Button Content="Kokoushuone 4" x:Name="Meeting_Room_4" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Background="#FFFBFBFB" BorderBrush="#CCCCCCCC" BorderThickness="2,2,2,2" Margin="0,370,120,0" Height="242" VerticalAlignment="Top" HorizontalAlignment="Right" Width="277"/>
         <StackPanel Margin="0,15,10,15" Width="NaN" Height="NaN" x:Name="ReservationWindow" Visibility="Visible"/>
         <Grid Margin="321,323,570,-129" Name="MeetingRoom1Selector" Visibility="Collapsed">
             <Button Content="8:00 - 9:00" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2" Margin="10,20,279,524">
