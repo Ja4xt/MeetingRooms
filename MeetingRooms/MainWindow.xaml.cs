@@ -66,6 +66,11 @@ namespace MeetingRooms
             }
         }
 
+        private void InnerButton_PMD(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            e.Handled = true;
+        }
+
         /*private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             // Get the button that was clicked

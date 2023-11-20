@@ -14,9 +14,19 @@
             <ImageBrush ImageSource="/1.jpg"/>
         </Grid.Background>
         <Button Content="Kokoushuone 1" x:Name="Meeting_Room_1" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Background="#FFFBFBFB" BorderBrush="#CCCCCCCC" BorderThickness="2,2,2,2" Margin="0,370,959,0" Height="242" VerticalAlignment="Top" HorizontalAlignment="Right" Width="270"/>
+        <Button Content="Kokoushuone 2" x:Name="Meeting_Room_2" RenderTransformOrigin="0.5,0.5" Click="Button_Click" Background="#FFFBFBFB" BorderBrush="#CCCCCCCC" BorderThickness="2,2,2,2" Margin="0,370,684,0" Height="242" VerticalAlignment="Top" HorizontalAlignment="Right" Width="270"/>
         <StackPanel Margin="0,15,10,15" Width="NaN" Height="NaN" x:Name="ReservationWindow" Visibility="Visible"/>
-        <Grid Margin="321,323,570,-129" Name="MeetingRoom1Selector" Visibility="Visible">
+        <Grid Margin="321,323,570,-129" Name="MeetingRoom1Selector" Visibility="Collapsed">
             <Button Content="8:00 - 9:00" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2" Margin="10,20,279,524">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button Content="9:00 - 10:00" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2" Margin="10,50,279,495">
                 <Button.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -111,15 +121,6 @@
                     <TextBox TextWrapping="Wrap" Text="Kommentti:" DockPanel.Dock="Top" TextChanged="TextBox_TextChanged" Height="27" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" SelectionTextBrush="{x:Null}" Foreground="Black"/>
                 </DockPanel>
             </Grid>
-            <Button Content="9:00 - 10:00" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1" BorderBrush="#FF2BFF00" Background="#FFDDDDDD" BorderThickness="2,2,2,2" Margin="10,50,279,495">
-                <Button.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Button.RenderTransform>
-            </Button>
         </Grid>
     </Grid>
 </Window>
