@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace MeetingRooms
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// No logic for window xdDddddDDdddd yeah i need to sleep but i also need to complete this so like idk but local edit is broken so like idk uploading once its done and stuff yerrrrr
     /// </summary>
     public partial class MainWindow : Window
     {
