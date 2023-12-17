@@ -20,14 +20,6 @@ The project is coded in C#, and the database is implemented using SQL Server Exp
 
 The project plan includes a detailed schedule and budget. The project is divided into phases, including planning, coding, UI design, database implementation, and final documentation. The schedule is designed to be completed by a specific date.
 
-### 3.2 Tasks
-
-- Project Manager: Eetu
-- Documentation: Aref
-- UI Design: Laura
-- Coding: Eetu, Jan
-- Database Implementation: Jan
-
 ### 3.3 Database
 
 The SQL Server Express database stores reservation schedules and user details, enabling multi-device usage and user authentication.
