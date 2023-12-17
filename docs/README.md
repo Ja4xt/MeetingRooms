@@ -20,15 +20,15 @@ The project is coded in C#, and the database is implemented using SQL Server Exp
 
 The project plan includes a detailed schedule and budget. The project is divided into phases, including planning, coding, UI design, database implementation, and final documentation. The schedule is designed to be completed by a specific date.
 
-### 3.3 Database
+### 3.2 Database
 
 The SQL Server Express database stores reservation schedules and user details, enabling multi-device usage and user authentication.
 
-### 3.4 Budget
+### 3.3 Budget
 
 The project is executed as a school assignment, and the budget is set at €0.
 
-### 3.5 Risks
+### 3.4 Risks
 
 Project risks are minimal as the project is cost-free. The primary investment is the students' working hours, and the main risk is receiving a low grade.
 
