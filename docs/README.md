@@ -6,7 +6,7 @@ We chose the project of a Meeting Room Reservation System because it is an essen
 
 The application is an easy-to-use Windows application written in C#. It can be installed on multiple devices, allowing users to make reservations from their workstations. The visual concept of the user interface includes:
 
-![UI Concept](link-to-ui-concept-image)
+![UI Concept](https://github.com/Ja4xt/MeetingRooms/tree/master/docs/Concept.png?raw=true)
 
 ## 2. Objectives
 
