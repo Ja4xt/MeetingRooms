@@ -1,0 +1,20 @@
+﻿<Window x:Class="MeetingRooms.ReservationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MeetingRooms"
+        mc:Ignorable="d"
+        Title="ReservationWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Nimi:"/>
+            <TextBox x:Name="NameTextBox" Margin="0,0,0,10"/>
+
+            <Label Content="Kommentti:"/>
+            <TextBox x:Name="CommentTextBox" Margin="0,0,0,10"/>
+
+            <Button Content="Luo varaus" Click="ReserveButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

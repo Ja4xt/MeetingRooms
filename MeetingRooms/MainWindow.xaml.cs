@@ -15,29 +15,28 @@ using System.Windows.Shapes;
 
 namespace MeetingRooms
 {
-    /// <summary>
-    /// No logic for window xdDddddDDdddd yeah i need to sleep but i also need to complete this so like idk but local edit is broken so like idk uploading once its done and stuff yerrrrr
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
+        
         private Button Nappi;
 
 
+        // Text transform for meeting room button
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (this.MeetingRoom1Selector.Visibility == Visibility.Collapsed)
             {
                 this.MeetingRoom1Selector.Visibility = Visibility.Visible;
-                this.Meeting_Room_1.Content = "Kokoushuone 1";
+                this.Meeting_Room_1.Content = "Piilota";
             }
             else
             {
                 this.MeetingRoom1Selector.Visibility = Visibility.Collapsed;
-                this.Meeting_Room_1.Content = "Piilota";
+                this.Meeting_Room_1.Content = "Kokoushuone 1";
             }
         }
 
@@ -46,7 +45,7 @@ namespace MeetingRooms
 
         }
 
-        // Logic for meeting room buttons
+        // Logic for stack panel
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             // Get the button that was clicked
@@ -58,12 +57,6 @@ namespace MeetingRooms
                 // Calculate the position of the DockPanel relative to the button
                 GeneralTransform transform = clickedButton.TransformToAncestor(this);
                 Point position = transform.Transform(new Point(-300, -700));
-
-                // Set the DockPanel's position
-                ReservationDockPanel.Margin = new Thickness(position.X + clickedButton.ActualWidth, position.Y, 000, 000);
-
-                // Show the DockPanel
-                ReservationDockPanel.Visibility = Visibility.Visible;
             }
         }
 
@@ -72,23 +65,27 @@ namespace MeetingRooms
         {
             Button clickedButton = sender as Button;
 
-            if (this.ReservationDockPanel.Visibility == Visibility.Collapsed)
-            {
-                this.ReservationDockPanel.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                this.ReservationDockPanel.Visibility = Visibility.Collapsed;
-            }
+            // Open the ReservationWindow
+            ReservationWindow reservationWindow = new ReservationWindow();
+            reservationWindow.Owner = this;
+            reservationWindow.ShowDialog();
 
-            if (clickedButton != null)
+            // Access reservation details from the ReservationWindow
+            string reservationName = reservationWindow.ReservationName;
+            string reservationComment = reservationWindow.ReservationComment;
+
+            // Process reservation details as needed
+            if (!string.IsNullOrEmpty(reservationName) && !string.IsNullOrEmpty(reservationComment))
             {
+                // Update UI coloring
                 var converter = new System.Windows.Media.BrushConverter();
                 var brush = (Brush)converter.ConvertFromString("#FFFF0000");
-                Nappi.BorderBrush = brush;
-            };
 
+                // Update the border color of the reservation button
+                clickedButton.BorderBrush = brush;
             }
+        }
+
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
