@@ -79,5 +79,3 @@ GitHub is a web-based platform for version control and collaboration in software
 ## 6. Conclusion
 
 The Meeting Room Reservation App is aimed at simplifying the reservation process for meeting rooms, providing an intuitive and efficient solution for companies with multiple meeting spaces. The documentation covers project objectives, scheduling, tasks, database implementation, and the tools used in the development process.
-
-For more information on Docsify, visit [Docsify Documentation](https://docsify.js.org).
